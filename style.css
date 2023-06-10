@@ -1,0 +1,135 @@
+.container{
+
+
+    display: flex;
+    
+    flex-direction: column;
+    
+    margin: auto;
+
+    margin-top: 6vh;
+    
+    align-items: center;
+    
+    align-self: center;
+    
+    justify-content: center;
+    
+    width: 100vh;
+    
+    height: 80vh;
+    
+    
+    
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
+    }
+    
+    .new-container{
+    
+        display: flex;
+    
+    
+        margin: auto;
+        
+        width: 125vh;
+       
+        height: 20vh;
+        
+        border: 2px solid black;
+        
+        border-radius: 15px;
+    
+    }
+    .place{
+    
+        margin: auto;
+       
+        display: flex;
+        
+        align-items: center;
+    
+        align-self: center;
+      
+        flex-direction: column;
+    
+       justify-content: center;
+    }
+    
+    .placement{
+    
+    display: flex;
+
+    margin-top: 15px;
+    
+    flex-direction: row;
+    
+    flex-wrap: wrap;
+
+    position: relative;
+    
+   justify-content: space-around;
+   
+   align-items: center;
+
+   align-self: flex-start;
+    
+    width: 700px;
+    
+    height: 50px;
+    
+    border: 2px solid black;
+    
+    border-radius: 50px;
+    
+    transition: 1s;
+
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
+    }
+    
+    .placement:hover{
+    
+        transition: 1s;
+        
+     
+        
+       
+    
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    
+    button{
+    
+    width: 80px;
+    
+    }
+    
+    a{
+    
+    text-decoration: none;
+    
+    color: black;
+    
+    transition: 0,5s;
+    
+    }
+    
+    a:hover{
+    
+        transition: 0,5s;
+        
+        color: teal;
+    }
+
+    #searchBar{
+
+        position: absolute;
+
+       z-index: 1;
+       margin-bottom: 600px;
+    }
+
+
+    
