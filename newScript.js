@@ -1,25 +1,30 @@
 
 
-let list = document.getElementById("placement")
+
 
 let seclist = document.getElementById("filterd")
 
 function search(){
 
+
+
 const searchInput = document.getElementById("searchBar");
 const filter = searchInput.value.toLowerCase();
 
-list.innerHTML = '';
+seclist.innerHTML = '';
 
 students.forEach(student => {
   if (student.name.toLowerCase().includes(filter)) {
-    list.innerHTML += `
-    <div class="placement">
+    seclist.innerHTML += `
+    <div id="filterd">
 
     <p class="list-group"><span> <img src="img/user.png" width="20px" alt="user"> ${student.name} </span></p>
-    <p class="list-group">  <span> <img src="img/age.png" width="20px" alt="age"> ${student.age} </span> </p>
+    <p class="list-group">  <span> ${student.emo} </span> </p>
+    <p class="list-group">  <span> <img src="img/test.png" width="20px" alt="age"> ${student.Fgrade} </span> </p>
 
-    
+    <p class="list-group">    <a href="mailto:${student.email} "> <img src="img/email.png" width="20px" alt="age"> </a> </p>
+    <p class="list-group">  <span> <img src="img/snack.png" width="20px" alt="age"> ${student.snack} </span> </p>
+
     </div>
     `;
   }
@@ -65,20 +70,41 @@ let students =[
 
 students.forEach(student => {
     
-list.innerHTML += `
+seclist.innerHTML += `
 
-<div class="placement">
+<div id="filterd">
 
 <p class="list-group"><span> <img src="img/user.png" width="20px" alt="user"> ${student.name} </span></p>
-<p class="list-group">  <span> <img src="img/age.png" width="20px" alt="age"> ${student.age} </span> </p>
+    <p class="list-group">  <span> ${student.emo} </span> </p>
+    <p class="list-group">  <span> <img src="img/test.png" width="20px" alt="age"> ${student.Fgrade} </span> </p>
 
+    <p class="list-group">    <a href="mailto:${student.email} "> <img src="img/email.png" width="20px" alt="age"> </a> </p>
+    <p class="list-group">  <span> <img src="img/snack.png" width="20px" alt="age"> ${student.snack} </span> </p>
 
 </div>
-
-
-
-`
+`;
 
 });
 
 
+students.forEach(student => {
+    
+    seclist.innerHTML += `
+    
+    <div id="filterd">
+    
+    <p class="list-group"><span> <img src="img/user.png" width="20px" alt="user"> ${student.name} </span></p>
+    <p class="list-group">  <span> <img src="img/age.png" width="20px" alt="age"> ${student.age} </span> </p>
+    <p class="list-group">  <span> <img src="img/age.png" width="20px" alt="age"> ${student.Fgrade} </span> </p>
+    
+    
+    </div>
+    
+    
+    
+    `
+    
+    });
+
+
+    
