@@ -44,7 +44,7 @@
     }
     .place{
     
-        margin: auto;
+        
        
         display: flex;
         
@@ -55,6 +55,8 @@
         flex-direction: column;
     
        justify-content: center;
+
+       margin-bottom: 600px;
     }
     
     #filterd{
@@ -127,7 +129,7 @@
         position: absolute;
 
        z-index: 1;
-       margin-bottom: 600px;
+       margin-bottom: 50px;
     }
 
 

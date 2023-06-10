@@ -87,24 +87,7 @@ seclist.innerHTML += `
 });
 
 
-students.forEach(student => {
-    
-    seclist.innerHTML += `
-    
-    <div id="filterd">
-    
-    <p class="list-group"><span> <img src="img/user.png" width="20px" alt="user"> ${student.name} </span></p>
-    <p class="list-group">  <span> <img src="img/age.png" width="20px" alt="age"> ${student.age} </span> </p>
-    <p class="list-group">  <span> <img src="img/age.png" width="20px" alt="age"> ${student.Fgrade} </span> </p>
-    
-    
-    </div>
-    
-    
-    
-    `
-    
-    });
+
 
 
     
